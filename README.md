@@ -42,8 +42,8 @@ Here are the key components and features of Selenium:
 - **Regression Testing:** Selenium helps run tests automatically to verify that new changes or features haven't broken existing functionality. <br>
 
 
-**Steps to Set Up Selenium with Java:**
-**1. Set up Java Development Environment**
+## **Steps to Set Up Selenium with Java:**
+### **1. Set up Java Development Environment**
 Make sure you have Java installed on your machine. You can download Java from Oracle's website.
 You can check if Java is installed by running this command in the terminal or command prompt:
 ```
