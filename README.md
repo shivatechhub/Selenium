@@ -78,3 +78,38 @@ Then, Maven will download the required libraries.
 - Download the appropriate WebDriver for your browser. For Chrome, get ChromeDriver from [here](https://googlechromelabs.github.io/chrome-for-testing/ "here").
 - Make sure the WebDriver executable is in your system’s PATH or specify its location in your code.
 
+### **Example:**
+```
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumTest {
+
+    public static void main(String[] args) {
+        // Set the path to the ChromeDriver executable (update the path as needed)
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+
+        // Initialize the ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            // Navigate to a webpage (e.g., Google)
+            driver.get("https://www.google.com");
+
+            // Get the title of the page
+            System.out.println("Page title is: " + driver.getTitle());
+
+            // Perform other interactions (optional)
+            // Example: driver.findElement(By.name("q")).sendKeys("Selenium WebDriver");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            // Close the browser after use
+            driver.quit();
+        }
+    }
+}
+
+```
+
