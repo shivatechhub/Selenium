@@ -122,7 +122,8 @@ Webdriver driver = new FirefoxDriver();
 Webdriver driver = new EdgeDriver();
 ```
 
-**2. Opening a Website** : Use the get() method to navigate to a URL.
+**2. Opening a Website** :
+Use the get() method to navigate to a URL.
 ```
 driver.get("https://www.example.com");
 ```
