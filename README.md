@@ -122,19 +122,19 @@ Webdriver driver = new FirefoxDriver();
 Webdriver driver = new EdgeDriver();
 ```
 
-**2. Opening a Website** :
+**2. Opening a Website** : <br>
 Use the get() method to navigate to a URL.
 ```
 driver.get("https://www.example.com");
 ```
 
-**3. Maximizing the Window**
+**3. Maximizing the Window**<br>
 To maximize the browser window, use the manage().window().maximize() method.
 ```
 driver.manage().window().maximize();
 ```
 
-**4. Finding Web Elements**
+**4. Finding Web Elements**<br>
 WebDriver provides several methods for locating elements on a page. Common methods include findElement() and findElements(). Here are some examples:
 
 ```
@@ -154,21 +154,21 @@ By CSS Selector:
 WebElement element = driver.findElement(By.cssSelector(".className"));
 ```
 
-**5. Clicking an Element**
+**5. Clicking an Element**<br>
 You can perform a click action using the click() method.
 ```
 WebElement button = driver.findElement(By.id("submitButton"));
 button.click();
 ```
 
-**6. Sending Keyboard Inputs**
+**6. Sending Keyboard Inputs**<br>
 To simulate typing into a text field, use the sendKeys() method.
 ```
 WebElement textField = driver.findElement(By.id("username"));
 textField.sendKeys("myUsername");
 ```
 
-**7. Getting Text from an Element**
+**7. Getting Text from an Element**<br>
 Use getText() to retrieve the text of an element.
 ```
 WebElement message = driver.findElement(By.id("message"));
@@ -176,7 +176,7 @@ String text = message.getText();
 System.out.println("Message: " + text);
 ```
 
-**8. Handling Alerts**
+**8. Handling Alerts**<br>
 WebDriver can handle JavaScript alerts using Alert interface.
 **Accepting an Alert:**
 ```
@@ -184,29 +184,29 @@ Alert alert = driver.switchTo().alert();
 alert.accept();
 ```
 
-**Dismissing an Alert:**
+**Dismissing an Alert:**<br>
 ```
 Alert alert = driver.switchTo().alert();
 alert.dismiss();
 ```
 
-**Getting Alert Text:**
+**Getting Alert Text:**<br>
 ```
 Alert alert = driver.switchTo().alert();
 String alertText = alert.getText();
 System.out.println("Alert text: " + alertText);
 ```
-**9. Switching Between Frames**
+**9. Switching Between Frames**<br>
 You can switch to an iframe using switchTo().frame().
 ```
 driver.switchTo().frame("frameName");
 ```
-**Switching Back to Main Content:**
+**Switching Back to Main Content:**<br>
 ```
 driver.switchTo().defaultContent();
 ```
 
-**10. Scrolling the Page**
+**10. Scrolling the Page**<br>
 To scroll the page, you can execute JavaScript using JavascriptExecutor.
 ```
 JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -214,7 +214,7 @@ js.executeScript("window.scrollBy(0, 250)", "");
 ```
 
 
-**11. Handling Multiple Windows/Tabs**
+**11. Handling Multiple Windows/Tabs**<br>
 Switch between windows or tabs using the window handles.
 ```
 String mainWindow = driver.getWindowHandle();
@@ -228,44 +228,44 @@ for (String window : allWindows) {
 }
 ```
 
-**12. Waiting for Elements**
+**12. Waiting for Elements**<br>
 There are two main types of waits: Implicit and Explicit.
 
-**Implicit Wait:**
+**Implicit Wait:**<br>
 Implicit wait will make WebDriver wait for a certain amount of time before throwing an exception if the element is not found.
 ```
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 ```
 
-**Explicit Wait:**
+**Explicit Wait:**<br>
 Explicit wait allows you to wait for a specific condition (like element visibility) before proceeding.
 ```
 WebDriverWait wait = new WebDriverWait(driver, 10);
 WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("elementId")));
 ```
 
-**13. Taking Screenshots**
+**13. Taking Screenshots**<br>
 You can capture a screenshot with TakesScreenshot interface.
 ```
 File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 FileUtils.copyFile(screenshot, new File("path/to/save/screenshot.png"));
 ```
 
-**14. Closing the Browser**
+**14. Closing the Browser**<br>
 Once you are done with the WebDriver, you should close the browser.
 ```
 driver.quit(); // Closes all windows and ends the WebDriver session
 driver.close(); // Closes the current browser window
 ```
 
-**15. Getting the Current URL**
+**15. Getting the Current URL**<br>
 To get the URL of the current page:
 ```
 String currentUrl = driver.getCurrentUrl();
 System.out.println("Current URL: " + currentUrl);
 ```
 
-**16. Handling Dropdowns**
+**16. Handling Dropdowns**<br>
 You can select options from a dropdown using the Select class.
 ```
 import org.openqa.selenium.support.ui.Select;
