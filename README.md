@@ -42,3 +42,39 @@ Here are the key components and features of Selenium:
 - **Regression Testing:** Selenium helps run tests automatically to verify that new changes or features haven't broken existing functionality. <br>
 
 
+**Steps to Set Up Selenium with Java:**
+**1. Set up Java Development Environment**
+Make sure you have Java installed on your machine. You can download Java from Oracle's website.
+You can check if Java is installed by running this command in the terminal or command prompt:
+```
+$ java -version
+```
+
+
+**2. Install an Integrated Development Environment (IDE)**
+You can use Eclipse, IntelliJ IDEA, or NetBeans to write your Selenium Java code. Eclipse is the most commonly used IDE for Selenium projects.
+Download Eclipse from [here](https://www.eclipse.org/downloads/ "here").
+
+**3. Add Selenium WebDriver Dependency**
+You need to add the Selenium WebDriver libraries to your project. There are two ways to do this:
+
+**Option 1: Use Maven**
+If you're using Maven, create a pom.xml file and add the following dependency:
+```
+<dependencies>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.6.0</version>
+    </dependency>
+</dependencies>
+```
+
+Then, Maven will download the required libraries.
+
+
+**Option 2: Manually Add JAR Fil**es
+- Download the latest version of the Selenium WebDriver JAR files from [here](https://www.selenium.dev/downloads/ "here").
+- Add the JAR files to your project's build path:
+- Right-click on the project → Build Path → Configure Build Path → Libraries tab → Add External JARs...
+
