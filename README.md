@@ -73,8 +73,8 @@ If you're using Maven, create a pom.xml file and add the following dependency:
 Then, Maven will download the required libraries.
 
 
-**Option 2: Manually Add JAR Fil**es
-- Download the latest version of the Selenium WebDriver JAR files from [here](https://www.selenium.dev/downloads/ "here").
-- Add the JAR files to your project's build path:
-- Right-click on the project → Build Path → Configure Build Path → Libraries tab → Add External JARs...
+**4. Set Up WebDriver**
+- You need a WebDriver to interact with the browser. For example, if you're using Chrome, you'll need the ChromeDriver.
+- Download the appropriate WebDriver for your browser. For Chrome, get ChromeDriver from [here](https://googlechromelabs.github.io/chrome-for-testing/ "here").
+- Make sure the WebDriver executable is in your system’s PATH or specify its location in your code.
 
