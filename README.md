@@ -37,7 +37,8 @@ Here are the key components and features of Selenium:
 
 
 ### Common Use Cases:
-- Automated Web Testing: Selenium is widely used for automated functional testing of web applications to ensure they perform as expected across different browsers. <br>
-- Web Scraping: Automating the extraction of data from websites, particularly when data is dynamically generated (e.g., JavaScript-heavy websites). <br>
-- Regression Testing: Selenium helps run tests automatically to verify that new changes or features haven't broken existing functionality. <br>
+- **Automated Web Testing:** Selenium is widely used for automated functional testing of web applications to ensure they perform as expected across different browsers. <br>
+- **Web Scraping: **Automating the extraction of data from websites, particularly when data is dynamically generated (e.g., JavaScript-heavy websites). <br>
+- **Regression Testing: ** Selenium helps run tests automatically to verify that new changes or features haven't broken existing functionality. <br>
+
 
