@@ -51,11 +51,11 @@ $ java -version
 ```
 
 
-**2. Install an Integrated Development Environment (IDE)**
+### **2. Install an Integrated Development Environment (IDE)**
 You can use Eclipse, IntelliJ IDEA, or NetBeans to write your Selenium Java code. Eclipse is the most commonly used IDE for Selenium projects.
 Download Eclipse from [here](https://www.eclipse.org/downloads/ "here").
 
-**3. Add Selenium WebDriver Dependency**
+### **3. Add Selenium WebDriver Dependency**
 You need to add the Selenium WebDriver libraries to your project. There are two ways to do this:
 
 **Option 1: Use Maven**
