@@ -5,12 +5,12 @@ Selenium is an open-source suite of tools used for automating web browsers. It a
 
 Here are the key components and features of Selenium:
 ### **1. Selenium WebDriver**
-```
+
 It is the core component of Selenium that allows for interaction with web browsers. <br>
 It provides a programming interface to control and interact with a browser, simulating user actions such as clicking buttons, typing text into fields, and navigating between pages. <br>
 Supports multiple browsers, including Chrome, Firefox, Safari, and Edge. <br>
 WebDriver interacts directly with the browser (unlike Selenium RC, which used a JavaScript-based approach). <br>
-```
+
 
 ### **2. Selenium Grid**
 ```
