@@ -1,7 +1,7 @@
 # Selenium
-```
+
 Selenium is an open-source suite of tools used for automating web browsers. It allows developers to write scripts in various programming languages (such as Java, Python, C#, Ruby, and JavaScript) to automate the process of interacting with a website. This can include tasks like testing web applications, scraping data from websites, or automating repetitive tasks in a web browser.
-```
+
 
 Here are the key components and features of Selenium:
 1. Selenium WebDriver
